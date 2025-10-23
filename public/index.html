@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Digimon Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🔥 Mega Digimon Tracker</h1>
+            <p class="subtitle">Track your collection of Mega-level Digimon</p>
+        </header>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-label">Collection Progress</span>
+                <span class="progress-count"><span id="collectedCount">0</span> / <span id="totalCount">0</span></span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar">
+                    <span class="progress-percentage" id="progressPercentage">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Vaccine">💉 Vaccine</button>
+            <button class="filter-btn" data-filter="Data">💾 Data</button>
+            <button class="filter-btn" data-filter="Virus">🦠 Virus</button>
+            <button class="filter-btn" data-filter="Free">🌟 Free</button>
+            <button class="filter-btn" data-filter="Unknown">❓ Unknown</button>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="selectAllBtn">✓ Select All</button>
+            <button class="control-btn" id="deselectAllBtn">✗ Deselect All</button>
+            <button class="control-btn" id="resetBtn">🔄 Reset Progress</button>
+        </div>
+
+        <div class="grid" id="digimonGrid">
+            <!-- Digimon cards will be inserted here -->
+        </div>
+
+        <footer class="footer">
+            <p>Made with ❤️ for Digimon fans</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

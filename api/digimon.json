@@ -1,0 +1,490 @@
+[
+  {
+    "Name": "Apollomon ImageApollomon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Alphamon ImageAlphamon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "UlforceVeedramon ImageUlforceVeedramon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Varodurumon ImageVarodurumon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Venusmon ImageVenusmon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "WarGreymon ImageWarGreymon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Ouryumon ImageOuryumon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Ophanimon ImageOphanimon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "ClavisAngemon ImageClavisAngemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Craniamon ImageCraniamon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Eaglemon ImageEaglemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Chronomon HM ImageChronomon HM",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Cherubimon (Black) ImageCherubimon (Black)",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Cherubimon (Good) ImageCherubimon (Good)",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Goldramon ImageGoldramon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "ShineGreymon ImageShineGreymon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Justimon ImageJustimon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "SkullMammothmon ImageSkullMammothmon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "SlashAngemon ImageSlashAngemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Kentaurosmon ImageKentaurosmon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Slayerdramon ImageSlayerdramon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Seraphimon ImageSeraphimon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "MegaGargomon ImageMegaGargomon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Durandamon ImageDurandamon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Neptunemon ImageNeptunemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "HiAndromon ImageHiAndromon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "BanchoLeomon ImageBanchoLeomon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "HerculesKabuterimon ImageHerculesKabuterimon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Phoenixmon ImagePhoenixmon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Magnadramon ImageMagnadramon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Mastemon ImageMastemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "MarineAngemon ImageMarineAngemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Marsmon ImageMarsmon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Jupitermon ImageJupitermon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Ravemon ImageRavemon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "UltimateBrachiomon ImageUltimateBrachiomon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Vulcanusmon ImageVulcanusmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Gankoomon ImageGankoomon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Kuzuhamon ImageKuzuhamon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "GroundLocomon ImageGroundLocomon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Gryphonmon ImageGryphonmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Ceresmon ImageCeresmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Ceresmon Medium ImageCeresmon Medium",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "SaberLeomon ImageSaberLeomon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Sakuyamon ImageSakuyamon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Jesmon ImageJesmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "JumboGamemon ImageJumboGamemon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Dianamon ImageDianamon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Dynasmon ImageDynasmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Leopardmon ImageLeopardmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Leopardmon LM ImageLeopardmon LM",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Dorugoramon ImageDorugoramon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "PileVolcanomon ImagePileVolcanomon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "PrinceMamemon ImagePrinceMamemon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Plesiomon ImagePlesiomon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Boltmon ImageBoltmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "MirageGaogamon ImageMirageGaogamon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "MetalGarurumon ImageMetalGarurumon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "MetalSeadramon ImageMetalSeadramon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "MedievalGallantmon ImageMedievalGallantmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Rosemon ImageRosemon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "Lotosmon ImageLotosmon",
+    "Attribute": "Data"
+  },
+  {
+    "Name": "AvengeKidmon ImageAvengeKidmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Ebemon ImageEbemon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "VenomMyotismon ImageVenomMyotismon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "AncientWisemon ImageAncientWisemon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Gaiomon ImageGaiomon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "ChaosGallantmon ImageChaosGallantmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Chaosdramon ImageChaosdramon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Callismon ImageCallismon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Gundramon ImageGundramon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "KingEtemon ImageKingEtemon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "GranDracmon ImageGranDracmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Chronomon DM ImageChronomon DM",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Zanbamon ImageZanbamon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "ZombiePlutomon ImageZombiePlutomon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Darkdramon ImageDarkdramon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "TigerVespamon ImageTigerVespamon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Titamon ImageTitamon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "TyrantKabuterimon ImageTyrantKabuterimon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Creepymon ImageCreepymon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Gallantmon ImageGallantmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Bacchusmon ImageBacchusmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Bacchusmon DM ImageBacchusmon DM",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Barbamon ImageBarbamon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Piedmon ImagePiedmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Puppetmon ImagePuppetmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Pharaohmon ImagePharaohmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Pukumon ImagePukumon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "PlatinumNumemon ImagePlatinumNumemon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Plutomon ImagePlutomon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Breakdramon ImageBreakdramon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "MaloMyotismon ImageMaloMyotismon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "BeelStarmon ImageBeelStarmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Beelzemon ImageBeelzemon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Belphemon SM ImageBelphemon SM",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "MagnaKidmon ImageMagnaKidmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Minervamon ImageMinervamon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Millenniummon ImageMillenniummon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Machinedramon ImageMachinedramon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Megidramon ImageMegidramon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "MetalEtemon ImageMetalEtemon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Merukimon ImageMerukimon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Junomon ImageJunomon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Junomon HM ImageJunomon HM",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "RustTyrannomon ImageRustTyrannomon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Leviamon ImageLeviamon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Lilithmon ImageLilithmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "LordKnightmon ImageLordKnightmon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "Imperialdramon DM ImageImperialdramon DM",
+    "Attribute": "Free"
+  },
+  {
+    "Name": "Imperialdramon FM ImageImperialdramon FM",
+    "Attribute": "Free"
+  },
+  {
+    "Name": "Vikemon ImageVikemon",
+    "Attribute": "Free"
+  },
+  {
+    "Name": "Valkyrimon ImageValkyrimon",
+    "Attribute": "Free"
+  },
+  {
+    "Name": "GranKuwagamon ImageGranKuwagamon",
+    "Attribute": "Free"
+  },
+  {
+    "Name": "Diaboromon ImageDiaboromon",
+    "Attribute": "Unknown"
+  },
+  {
+    "Name": "Omnimon Zwart ImageOmnimon Zwart",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Chaosmon ImageChaosmon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "Chaosmon Valdur Arm ImageChaosmon Valdur Arm",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "GraceNovamon ImageGraceNovamon",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "ShineGreymon BM ImageShineGreymon BM",
+    "Attribute": "Vaccine"
+  },
+  {
+    "Name": "BlackWarGreymon ImageBlackWarGreymon",
+    "Attribute": "Virus"
+  },
+  {
+    "Name": "MetalGarurumon (Black) ImageMetalGarurumon (Black)",
+    "Attribute": "Virus"
+  }
+]
