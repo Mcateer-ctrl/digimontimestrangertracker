@@ -86,12 +86,25 @@ function createDigimonCard(digimon, index) {
     
     const attributeClass = digimon.Attribute.toLowerCase();
     
+    // Check if image exists
+    const imagePath = `/images/${digimon.Name.replace(/\s+/g, '_')}.png`;
+    const imageHTML = `<img src="${imagePath}" alt="${digimon.Name}" class="digimon-image" onerror="this.style.display='none'">`;
+    
     card.innerHTML = `
+        ${imageHTML}
         <div class="card-header">
             <h3 class="digimon-name">${digimon.Name}</h3>
             <span class="check-icon">✓</span>
         </div>
         <span class="attribute-badge ${attributeClass}">${digimon.Attribute}</span>
+        ${digimon.Link ? `<a href="${digimon.Link}" target="_blank" rel="noopener noreferrer" class="digimon-link" onclick="event.stopPropagation()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            View Details
+        </a>` : ''}
     `;
     
     card.addEventListener('click', () => toggleDigimon(digimon.Name, card));

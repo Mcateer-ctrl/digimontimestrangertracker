@@ -322,6 +322,45 @@ body {
     border: 1px solid var(--unknown);
 }
 
+.digimon-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    padding: 10px;
+}
+
+.digimon-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.digimon-link:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateX(2px);
+}
+
+.digimon-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
 .footer {
     text-align: center;
     padding: 30px;
