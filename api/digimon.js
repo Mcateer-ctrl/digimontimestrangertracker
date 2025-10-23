@@ -12,7 +12,7 @@ module.exports = (req, res) => {
   }
   
   try {
-    const filePath = path.join(__dirname, 'digimon.json');
+    const filePath = path.join(__dirname, 'data.json');
     const digimonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     res.status(200).json(digimonData);
   } catch (error) {
