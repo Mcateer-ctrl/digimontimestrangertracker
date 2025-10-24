@@ -2,6 +2,7 @@
 let digimonData = [];
 let collectedDigimon = new Set();
 let currentFilter = 'all';
+let searchQuery = '';
 
 // DOM Elements
 const digimonGrid = document.getElementById('digimonGrid');
@@ -13,6 +14,11 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 const selectAllBtn = document.getElementById('selectAllBtn');
 const deselectAllBtn = document.getElementById('deselectAllBtn');
 const resetBtn = document.getElementById('resetBtn');
+const searchInput = document.getElementById('searchInput');
+const clearSearchBtn = document.getElementById('clearSearchBtn');
+const exportBtn = document.getElementById('exportBtn');
+const importBtn = document.getElementById('importBtn');
+const importFileInput = document.getElementById('importFileInput');
 
 // Initialize the app
 async function init() {
@@ -146,16 +152,99 @@ function updateProgress() {
 // Apply current filter
 function applyFilter() {
     const cards = document.querySelectorAll('.digimon-card');
-    
     cards.forEach(card => {
         const attribute = card.dataset.attribute;
-        
-        if (currentFilter === 'all' || attribute === currentFilter) {
+        const index = parseInt(card.dataset.index);
+        const name = digimonData[index] ? digimonData[index].Name : '';
+
+        const matchesFilter = currentFilter === 'all' || attribute === currentFilter;
+        const matchesSearch = !searchQuery || name.toLowerCase().includes(searchQuery);
+
+        if (matchesFilter && matchesSearch) {
             card.classList.remove('hidden');
         } else {
             card.classList.add('hidden');
         }
     });
+}
+
+// Export progress as JSON file
+function exportProgress() {
+    const payload = {
+        version: 1,
+        exportedAt: new Date().toISOString(),
+        collected: [...collectedDigimon]
+    };
+
+    try {
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'digimon-progress.json';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+    } catch (err) {
+        console.error('Export failed', err);
+        alert('Failed to export progress. See console for details.');
+    }
+}
+
+function importProgressFromObject(obj) {
+    let incoming = [];
+    if (Array.isArray(obj)) incoming = obj;
+    else if (obj && Array.isArray(obj.collected)) incoming = obj.collected;
+    else {
+        alert('Invalid progress file format.');
+        return;
+    }
+
+    incoming = incoming.filter(item => typeof item === 'string');
+
+    if (incoming.length === 0) {
+        alert('No valid Digimon names found in the file.');
+        return;
+    }
+
+    // If we have the dataset loaded, warn about unknown names so user can spot typos
+    if (digimonData.length > 0) {
+        const known = new Set(digimonData.map(d => d.Name));
+        const unknown = incoming.filter(n => !known.has(n));
+        if (unknown.length > 0) {
+            // don't block import, just inform
+            alert(`${unknown.length} imported name(s) were not found in the current dataset and will be ignored for UI marking.`);
+        }
+    }
+    const replace = confirm('Replace existing progress with imported progress? OK = Replace, Cancel = Merge');
+
+    if (replace) {
+        collectedDigimon = new Set(incoming);
+    } else {
+        incoming.forEach(n => collectedDigimon.add(n));
+    }
+
+    saveProgress();
+    // Re-render so cards reflect the newly imported progress
+    renderDigimon();
+    updateProgress();
+    alert('Progress imported successfully.');
+}
+
+function handleImportFile(file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+        try {
+            const parsed = JSON.parse(reader.result);
+            importProgressFromObject(parsed);
+        } catch (err) {
+            console.error('Failed to parse imported file', err);
+            alert('Failed to parse JSON file: ' + err.message);
+        }
+    };
+    reader.onerror = () => alert('Failed to read file.');
+    reader.readAsText(file);
 }
 
 // Attach event listeners
@@ -219,6 +308,45 @@ function attachEventListeners() {
             updateProgress();
         }
     });
+
+    // Search input
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = (e.target.value || '').toLowerCase();
+            applyFilter();
+        });
+    }
+
+    if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (searchInput) searchInput.value = '';
+            searchQuery = '';
+            applyFilter();
+            searchInput && searchInput.focus();
+        });
+    }
+
+    // Export / Import handlers
+    if (exportBtn) {
+        exportBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            exportProgress();
+        });
+    }
+
+    if (importBtn && importFileInput) {
+        importBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            importFileInput.value = '';
+            importFileInput.click();
+        });
+
+        importFileInput.addEventListener('change', (e) => {
+            const file = e.target.files && e.target.files[0];
+            if (file) handleImportFile(file);
+        });
+    }
 }
 
 // Add celebration animation

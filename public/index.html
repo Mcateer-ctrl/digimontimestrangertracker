@@ -37,10 +37,18 @@
             <button class="filter-btn" data-filter="Unknown">❓ Unknown</button>
         </div>
 
+        <div class="search-container">
+            <input type="search" id="searchInput" placeholder="Search Digimon by name..." aria-label="Search Digimon" />
+            <button id="clearSearchBtn" class="control-btn" aria-label="Clear search">✖</button>
+        </div>
+
         <div class="controls">
             <button class="control-btn" id="selectAllBtn">✓ Select All</button>
             <button class="control-btn" id="deselectAllBtn">✗ Deselect All</button>
             <button class="control-btn" id="resetBtn">🔄 Reset Progress</button>
+            <button class="control-btn" id="exportBtn">⬇ Export</button>
+            <button class="control-btn" id="importBtn">⬆ Import</button>
+            <input id="importFileInput" type="file" accept=".json,application/json" style="display:none" />
         </div>
 
         <div class="grid" id="digimonGrid">
