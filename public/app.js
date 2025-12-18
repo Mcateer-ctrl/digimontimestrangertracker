@@ -15,6 +15,7 @@ const selectAllBtn = document.getElementById('selectAllBtn');
 const deselectAllBtn = document.getElementById('deselectAllBtn');
 const resetBtn = document.getElementById('resetBtn');
 const searchInput = document.getElementById('searchInput');
+const digimonList = document.getElementById('digimon-list');
 const clearSearchBtn = document.getElementById('clearSearchBtn');
 const exportBtn = document.getElementById('exportBtn');
 const importBtn = document.getElementById('importBtn');
@@ -48,10 +49,34 @@ async function loadDigimonData() {
         }));
         
         totalCount.textContent = digimonData.length;
+        populateSearchSuggestions();
     } catch (error) {
         console.error('Error loading Digimon data:', error);
         digimonGrid.innerHTML = '<div class="loading">Error loading data. Please refresh the page.</div>';
     }
+}
+
+// Populate search suggestions
+function populateSearchSuggestions(query = '') {
+    if (!digimonList) return;
+
+    const normalizedQuery = query.trim().toLowerCase();
+    digimonList.innerHTML = '';
+
+    // If there's no query, don't show any suggestions
+    if (!normalizedQuery) return;
+
+    // Filter names by query and limit results
+    const maxSuggestions = 25;
+    const matches = digimonData
+        .filter(d => d.Name && d.Name.toLowerCase().includes(normalizedQuery))
+        .slice(0, maxSuggestions);
+
+    matches.forEach(digimon => {
+        const option = document.createElement('option');
+        option.value = digimon.Name;
+        digimonList.appendChild(option);
+    });
 }
 
 // Load progress from localStorage
@@ -312,7 +337,9 @@ function attachEventListeners() {
     // Search input
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
-            searchQuery = (e.target.value || '').toLowerCase();
+            const value = e.target.value || '';
+            searchQuery = value.toLowerCase();
+            populateSearchSuggestions(value);
             applyFilter();
         });
     }
