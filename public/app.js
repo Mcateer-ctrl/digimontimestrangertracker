@@ -66,10 +66,11 @@ function populateSearchSuggestions(query = '') {
     // If there's no query, don't show any suggestions
     if (!normalizedQuery) return;
 
-    // Filter names by query and limit results
+    // Filter names by FIRST LETTER and limit results
     const maxSuggestions = 25;
+    const firstChar = normalizedQuery[0];
     const matches = digimonData
-        .filter(d => d.Name && d.Name.toLowerCase().includes(normalizedQuery))
+        .filter(d => d.Name && d.Name[0] && d.Name[0].toLowerCase() === firstChar)
         .slice(0, maxSuggestions);
 
     matches.forEach(digimon => {
